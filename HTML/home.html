@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<!-- onload="welcomMessage()" -->
+<body onload="welcomMessage()">
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container">
+          <a class="navbar-brand fw-semibold text-white text-uppercase" href="#">smart login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <button onclick="logOutFunc()" class="btn btn-outline-warning ms-auto" type="button">Log Out</button>
+          </div>
+        </div>
+    </nav>
+    <main class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="w-75 mx-auto my-5 shadow p-5 text-center">
+                    <div id="user" class="inner">
+                        <h1 id="welcomeMessage" class="fw-bold text-info">Welcome</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
